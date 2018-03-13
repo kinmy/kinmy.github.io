@@ -5,20 +5,18 @@
   
 
   
-  <title>vue-cli+webpack创建vue模板 | Hexo</title>
+  <title>有关css中的transition的transformX（...px）的坑 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如下图：">
+  <meta name="description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue-cli+webpack创建vue模板">
-<meta property="og:url" content="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/index.html">
+<meta property="og:title" content="有关css中的transition的transformX（...px）的坑">
+<meta property="og:url" content="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如下图：">
-<meta property="og:image" content="http://yoursite.com/images/pasted-30.jpg">
-<meta property="og:updated_time" content="2018-03-12T14:29:19.899Z">
+<meta property="og:description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
+<meta property="og:updated_time" content="2018-03-13T16:12:06.833Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue-cli+webpack创建vue模板">
-<meta name="twitter:description" content="如下图：">
-<meta name="twitter:image" content="http://yoursite.com/images/pasted-30.jpg">
+<meta name="twitter:title" content="有关css中的transition的transformX（...px）的坑">
+<meta name="twitter:description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -65,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-vue-cli-webpack创建vue模板" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-有关css中的transition的transformX（-px）的坑" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/03/12/vue-cli-webpack创建vue模板/" class="article-date">
-  <time datetime="2018-03-12T14:28:33.000Z" itemprop="datePublished">2018-03-12</time>
+    <a href="/2018/03/14/有关css中的transition的transformX（-px）的坑/" class="article-date">
+  <time datetime="2018-03-13T16:10:31.000Z" itemprop="datePublished">2018-03-14</time>
 </a>
     
   </div>
@@ -79,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      vue-cli+webpack创建vue模板
+      有关css中的transition的transformX（...px）的坑
     </h1>
   
 
@@ -87,12 +85,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>如下图：<br><img src="/images/pasted-30.jpg" alt="666"></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.slide-trans-enter-active &#123;</span><br><span class="line">  transition: all 2s;</span><br><span class="line">  transform: translateX(0px);</span><br><span class="line">&#125;</span><br><span class="line">.slide-trans-enter &#123;</span><br><span class="line">  transform: translateX(900px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.slide-trans-enter-active &#123;</span><br><span class="line">  transition: all 2s;</span><br><span class="line">&#125;</span><br><span class="line">.slide-trans-enter &#123;</span><br><span class="line">  transform: translateX(900px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上两个动画效果相同，好坑。。。特此纪念。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/" data-id="cjeobqkzv00007kqbbxmp50v7" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -101,19 +101,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          新版Vue-cli 使用json server在本地模拟请求数据（webpack3.6版本）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/12/使用Hexo-Github一步步搭建属于自己的博客（基础）/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">使用Hexo+Github搭建属于自己的博客（基础）</div>
+      <div class="article-nav-title">新版Vue-cli 使用json server在本地模拟请求数据（webpack3.6版本）</div>
     </a>
   
 </nav>
