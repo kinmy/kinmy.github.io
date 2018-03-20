@@ -5,18 +5,18 @@
   
 
   
-  <title>有关css中的transition的transformX（...px）的坑 | Hexo</title>
+  <title>github上传项目代码+创建分支上传项目代码 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
+  <meta name="description" content="一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的） 1、git init （在本地工程目录下） 2、git add . 3、git commit -m “luyang”  （”luyang“为注释） 4、git branch luyang （创建分支） 5、git checkout  luyang （切换分支） 6、git remote">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有关css中的transition的transformX（...px）的坑">
-<meta property="og:url" content="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/index.html">
+<meta property="og:title" content="github上传项目代码+创建分支上传项目代码">
+<meta property="og:url" content="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
-<meta property="og:updated_time" content="2018-03-13T16:12:06.833Z">
+<meta property="og:description" content="一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的） 1、git init （在本地工程目录下） 2、git add . 3、git commit -m “luyang”  （”luyang“为注释） 4、git branch luyang （创建分支） 5、git checkout  luyang （切换分支） 6、git remote">
+<meta property="og:updated_time" content="2018-03-20T16:15:29.752Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有关css中的transition的transformX（...px）的坑">
-<meta name="twitter:description" content="1234567.slide-trans-enter-active &amp;#123;  transition: all 2s;  transform: translateX(0px);&amp;#125;.slide-trans-enter &amp;#123;  transform: translateX(900px);&amp;#125; 123456.slide-trans-enter-active &amp;#123;  tr">
+<meta name="twitter:title" content="github上传项目代码+创建分支上传项目代码">
+<meta name="twitter:description" content="一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的） 1、git init （在本地工程目录下） 2、git add . 3、git commit -m “luyang”  （”luyang“为注释） 4、git branch luyang （创建分支） 5、git checkout  luyang （切换分支） 6、git remote">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-有关css中的transition的transformX（-px）的坑" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-github上传项目代码-创建分支上传项目代码" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/03/14/有关css中的transition的transformX（-px）的坑/" class="article-date">
-  <time datetime="2018-03-13T16:10:31.000Z" itemprop="datePublished">2018-03-14</time>
+    <a href="/2018/03/21/github上传项目代码-创建分支上传项目代码/" class="article-date">
+  <time datetime="2018-03-20T16:07:26.000Z" itemprop="datePublished">2018-03-21</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      有关css中的transition的transformX（...px）的坑
+      github上传项目代码+创建分支上传项目代码
     </h1>
   
 
@@ -85,14 +85,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.slide-trans-enter-active &#123;</span><br><span class="line">  transition: all 2s;</span><br><span class="line">  transform: translateX(0px);</span><br><span class="line">&#125;</span><br><span class="line">.slide-trans-enter &#123;</span><br><span class="line">  transform: translateX(900px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.slide-trans-enter-active &#123;</span><br><span class="line">  transition: all 2s;</span><br><span class="line">&#125;</span><br><span class="line">.slide-trans-enter &#123;</span><br><span class="line">  transform: translateX(900px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上两个动画效果相同，好坑。。。特此纪念。</p>
+        <p>一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的）</p>
+<p>1、git init （在本地工程目录下）</p>
+<p>2、git add .</p>
+<p>3、git commit -m “luyang”  （”luyang“为注释）</p>
+<p>4、git branch luyang （创建分支）</p>
+<p>5、git checkout  luyang （切换分支）</p>
+<p>6、git remote add origin <a href="http://192.168.36.10:10080/quantum_rng_testing/nist" target="_blank" rel="noopener">http://192.168.36.10:10080/quantum_rng_testing/nist</a>    （”quantum_rng_testing/nist“ 为工程的目录）</p>
+<p>7、git push origin luyang （将分支上传）</p>
+<p>注意:如果提示 “please tell me who you are“</p>
+<p>在.git 目录下的config文件，在最后添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">name = xxxx</span><br><span class="line">email = xxxxxxx@xx.com</span><br></pre></td></tr></table></figure></p>
+<p>二、上传一个与MASTER相关的分支（该分支是从MASTER中git clone 得到，相关信息在 .git 文件中）</p>
+<p>修改后源码后，在进行如下操作</p>
+<p>1、git add .</p>
+<p>2、git commit -m “luyang”  （”luyang“为注释）</p>
+<p>3、git branch luyang （创建分支）</p>
+<p>4、git checkout  luyang （切换分支）</p>
+<p>5、git push origin luyang:luyang</p>
+<p>三、clone 某一个分支</p>
+<p>git clone &lt;remote_repo&gt; -b <branch></branch></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/" data-id="cjezv3rod0000f4qblz839l90" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -101,19 +117,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/03/21/github上传项目代码-创建分支上传项目代码/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          github上传项目代码+创建分支上传项目代码
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/03/14/有关css中的transition的transformX（-px）的坑/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">新版Vue-cli 使用json server在本地模拟请求数据（webpack3.6版本）</div>
+      <div class="article-nav-title">有关css中的transition的transformX（...px）的坑</div>
     </a>
   
 </nav>
