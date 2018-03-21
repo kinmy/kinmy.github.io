@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -83,31 +83,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的）</p>
-<p>1、git init （在本地工程目录下）</p>
+        <h6 id="一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD-ZIP文件，该文件与原MASTER分支是独立的）"><a href="#一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD-ZIP文件，该文件与原MASTER分支是独立的）" class="headerlink" title="一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的）"></a>一、上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP文件，该文件与原MASTER分支是独立的）</h6><p>1、git init （在本地工程目录下）</p>
 <p>2、git add .</p>
-<p>3、git commit -m “luyang”  （”luyang“为注释）</p>
-<p>4、git branch luyang （创建分支）</p>
-<p>5、git checkout  luyang （切换分支）</p>
+<p>3、git commit -m “luyang”<br>（”luyang”为注释）</p>
+<p>4、git branch luyang<br>（创建分支）</p>
+<p>5、git checkout luyang<br>（切换分支）</p>
 <p>6、git remote add origin <a href="http://192.168.36.10:10080/quantum_rng_testing/nist" target="_blank" rel="noopener">http://192.168.36.10:10080/quantum_rng_testing/nist</a>    （”quantum_rng_testing/nist“ 为工程的目录）</p>
-<p>7、git push origin luyang （将分支上传）</p>
+<p>7、git push origin luyang<br>（将分支上传）</p>
 <p>注意:如果提示 “please tell me who you are“</p>
 <p>在.git 目录下的config文件，在最后添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">name = xxxx</span><br><span class="line">email = xxxxxxx@xx.com</span><br></pre></td></tr></table></figure></p>
-<p>二、上传一个与MASTER相关的分支（该分支是从MASTER中git clone 得到，相关信息在 .git 文件中）</p>
-<p>修改后源码后，在进行如下操作</p>
+<h6 id="二、上传一个与MASTER相关的分支（该分支是从MASTER中git-clone-得到，相关信息在-git-文件中）"><a href="#二、上传一个与MASTER相关的分支（该分支是从MASTER中git-clone-得到，相关信息在-git-文件中）" class="headerlink" title="二、上传一个与MASTER相关的分支（该分支是从MASTER中git clone 得到，相关信息在 .git 文件中）"></a>二、上传一个与MASTER相关的分支（该分支是从MASTER中git clone 得到，相关信息在 .git 文件中）</h6><p>修改后源码后，在进行如下操作</p>
 <p>1、git add .</p>
-<p>2、git commit -m “luyang”  （”luyang“为注释）</p>
-<p>3、git branch luyang （创建分支）</p>
-<p>4、git checkout  luyang （切换分支）</p>
+<p>2、git commit -m “luyang”<br>（”luyang”为注释）</p>
+<p>3、git branch luyang<br>（创建分支）</p>
+<p>4、git checkout  luyang<br>（切换分支）</p>
 <p>5、git push origin luyang:luyang</p>
-<p>三、删除github上的远程分支<br>如下图所示: 我要删除分支develop-deskmark,通过下面命令就可以进行删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :develop-deskmark</span><br></pre></td></tr></table></figure></p>
-<p>四、clone 某一个分支</p>
-<p>git clone &lt;remote_repo&gt; -b <branch></branch></p>
+<h6 id="三、删除github上的远程分支"><a href="#三、删除github上的远程分支" class="headerlink" title="三、删除github上的远程分支"></a>三、删除github上的远程分支</h6><p>如下图所示: 我要删除分支develop-deskmark,通过下面命令就可以进行删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :develop-deskmark</span><br></pre></td></tr></table></figure></p>
+<h6 id="四、clone-某一个分支"><a href="#四、clone-某一个分支" class="headerlink" title="四、clone 某一个分支"></a>四、clone 某一个分支</h6><p>git clone &lt;remote_repo&gt; -b <branch></branch></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/" data-id="cjezv3rod0000f4qblz839l90" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/" data-id="cjezv3rod0000f4qblz839l90" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +143,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +204,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" data-id="cjeplh49o0000tkqbhwys9w9x" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" data-id="cjeplh49o0000tkqbhwys9w9x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -244,7 +241,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/" data-id="cjeobqkzv00007kqbbxmp50v7" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/" data-id="cjeobqkzv00007kqbbxmp50v7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -350,7 +347,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/使用Hexo-Github一步步搭建属于自己的博客（基础）/" data-id="cjeobilxc0000woqbvb6g2cyf" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/12/使用Hexo-Github一步步搭建属于自己的博客（基础）/" data-id="cjeobilxc0000woqbvb6g2cyf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -395,7 +392,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjenjr90f0000gsqb22px24xm" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjenjr90f0000gsqb22px24xm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -421,7 +418,7 @@ npm install axios --save //使用axios发送请求
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -431,7 +428,7 @@ npm install axios --save //使用axios发送请求
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
