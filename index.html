@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -93,7 +93,8 @@
 <h2 id="api层封装方法："><a href="#api层封装方法：" class="headerlink" title="api层封装方法："></a>api层封装方法：</h2><p>记得import axios！！！<br><img src="\images\pasted-38.png" alt="upload successful"></p>
 <p>跨域解决以及referer和host的修改</p>
 <h2 id="webpack-dev-conf-js文件："><a href="#webpack-dev-conf-js文件：" class="headerlink" title="webpack.dev.conf.js文件："></a>webpack.dev.conf.js文件：</h2><p>安装好axios后，在build文件夹下的webpack.dev.conf.js中的devServer中加上做一下配置：</p>
-<p>记得前面加上以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// express 配置，新版vue-cli（webpack3.6version）不需要再install express</span><br><span class="line">const express = require(&apos;express&apos;)</span><br><span class="line">const app = express()</span><br><span class="line">const apiRoutes = express.Router()</span><br><span class="line">app.use(&apos;/api&apos;, apiRoutes)</span><br></pre></td></tr></table></figure></p>
+<p>记得前面加上以下代码：</p>
+<h1 id="PS-特别注意！！！"><a href="#PS-特别注意！！！" class="headerlink" title="PS:特别注意！！！"></a>PS:特别注意！！！</h1><h1 id="有关-express的配置，新版vue-cli（webpack-3-6-0）中，已经默认下载了express-4-16-2，因此不需要再重新install-express，就可以直接require导入express了"><a href="#有关-express的配置，新版vue-cli（webpack-3-6-0）中，已经默认下载了express-4-16-2，因此不需要再重新install-express，就可以直接require导入express了" class="headerlink" title="有关 express的配置，新版vue-cli（webpack@^3.6.0）中，已经默认下载了express@^4.16.2，因此不需要再重新install express，就可以直接require导入express了"></a>有关 <code>express</code>的配置，新版vue-cli（webpack@^3.6.0）中，已经默认下载了express@^4.16.2，因此不需要再重新<code>install express</code>，就可以直接<code>require</code>导入<code>express</code>了</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// express 配置，新版vue-cli（webpack3.6version）不需要再install express</span><br><span class="line">const express = require(&apos;express&apos;)</span><br><span class="line">const app = express()</span><br><span class="line">const apiRoutes = express.Router()</span><br><span class="line">app.use(&apos;/api&apos;, apiRoutes)</span><br></pre></td></tr></table></figure>
 <p><img src="\images\pasted-39.png" alt="upload successful"></p>
 <h2 id="数据抓取成功："><a href="#数据抓取成功：" class="headerlink" title="数据抓取成功："></a>数据抓取成功：</h2><p>至此，以上vue中methos请求的接口已经能成功返回数据，qq音乐做了限制的接口数据就这样被我们抓取到了，运行结果如下：</p>
 <p><img src="\images\pasted-40.png" alt="upload successful"></p>
@@ -101,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/27/vue项目开发遇到的问题：如何改变请求的host以及referer抓取做了host以及referer限制的接口数据/" data-id="cjf9s2pq20000vgqbi273bm4v" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/27/vue项目开发遇到的问题：如何改变请求的host以及referer抓取做了host以及referer限制的接口数据/" data-id="cjf9s2pq20000vgqbi273bm4v" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -153,7 +154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/" data-id="cjezv3rod0000f4qblz839l90" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/21/github上传项目代码-创建分支上传项目代码/" data-id="cjezv3rod0000f4qblz839l90" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -192,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/14/有关css中的transition的transformX（-px）的坑/" data-id="cjepuv8h50000aoqbw860y6el" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -253,7 +254,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" data-id="cjeplh49o0000tkqbhwys9w9x" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/13/Vue-cli-使用json-server在本地模拟请求数据/" data-id="cjeplh49o0000tkqbhwys9w9x" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -290,7 +291,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/" data-id="cjeobqkzv00007kqbbxmp50v7" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/12/vue-cli-webpack创建vue模板/" data-id="cjeobqkzv00007kqbbxmp50v7" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -396,7 +397,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/使用Hexo-Github一步步搭建属于自己的博客（基础）/" data-id="cjeobilxc0000woqbvb6g2cyf" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/12/使用Hexo-Github一步步搭建属于自己的博客（基础）/" data-id="cjeobilxc0000woqbvb6g2cyf" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -441,7 +442,7 @@ npm install axios --save //使用axios发送请求
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjenjr90f0000gsqb22px24xm" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/11/hello-world/" data-id="cjenjr90f0000gsqb22px24xm" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -467,7 +468,7 @@ npm install axios --save //使用axios发送请求
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -477,7 +478,7 @@ npm install axios --save //使用axios发送请求
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -514,7 +515,7 @@ npm install axios --save //使用axios发送请求
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé par <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
